@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="major">
+        <form name="form">
+            <input class="text" name="textview" placeholder="0">
+        </form>
+        <table>
+            <tr>
+                <td><input class="btn" id="operator" type="button" value="C" onclick="C()"></td>
+                <td><input class="btn" id="operator" type="button" value="<" onclick="backspace()"></td>
+                <td><input class="btn" id="operator" type="button" value="/" onclick="enter('/')"></td>
+                <td><input class="btn" id="operator" type="button" value="x" onclick="enter('*')"></td>
+            </tr>
+            
+            <tr>
+                <td><input class="btn" type="button" value="7" onclick="enter('7')"></td>
+                <td><input class="btn" type="button" value="8" onclick="enter('8')"></td>
+                <td><input class="btn" type="button" value="9" onclick="enter('9')"></td>
+                <td><input class="btn" id="operator" type="button" value="-" onclick="enter('-')"></td>
+            </tr>
+            <tr>
+                    <td><input class="btn" type="button" value="4" onclick="enter('4')"></td>
+                    <td><input class="btn" type="button" value="5" onclick="enter('5')"></td>
+                    <td><input class="btn" type="button" value="6" onclick="enter('6')"></td>
+                    <td><input class="btn" id="operator" type="button" value="+" onclick="enter('+')"></td>
+                </tr>
+            <tr>
+                    <td><input class="btn" type="button" value="1" onclick="enter('1')"></td>
+                    <td><input class="btn" type="button" value="2" onclick="enter('2')"></td>
+                    <td><input class="btn" type="button" value="3" onclick="enter('3')"></td>
+                    <td rowspan="5"><input class="btn" id="equals" type="button" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+                    <td colspan="2"><input class="btn" style="width: 107px" type="button" value="0" onclick="enter('0')"></td>
+                    <td><input class="btn" type="button" value="." onclick="enter('.')"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="calculator.js"></script>
+</html>
